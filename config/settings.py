@@ -29,6 +29,8 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+
+
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
@@ -40,8 +42,8 @@ INSTALLED_APPS = [
     "social_django",
     "mainapp",
     "authapp",
+    "crispy_forms",
 ]
-
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -145,3 +147,4 @@ AUTHENTICATION_BACKENDS = (
 
 SOCIAL_AUTH_GITHUB_KEY = "e41f5b34a7304e5dffd6"
 SOCIAL_AUTH_GITHUB_SECRET = "40ab2553942715d8aa28c13ce64fe92ceeed524a"
+CRISPY_TEMPLATE_PACK = "bootstrap4"
